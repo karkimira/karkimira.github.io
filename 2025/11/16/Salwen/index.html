@@ -13,12 +13,26 @@
 <link rel="stylesheet" href="/css/style.css">
 
 <meta name="generator" content="Hexo 8.1.1"></head>
+<!-- 1. 引入 jQuery (CDN) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- 2. 引入搜索逻辑 -->
+<script src="/js/search.js"></script>
+
+<!-- 3. 启动搜索 -->
+<script>
+  var path = "/search.xml";
+  searchFunc(path, 'search-input', 'search-result');
+</script>
 <body>
 
   <!-- 顶部导航 -->
   <header class="wiki-header">
     <h1><a href="/">FANTAME_wiki</a></h1>
-    <div class="search-box">搜索功能待开发...</div>
+    <div class="search-container">
+  <input type="text" id="search-input" placeholder="🔍 检索档案...">
+  <div id="search-result"></div>
+</div>
   </header>
 
   <div class="wiki-container">

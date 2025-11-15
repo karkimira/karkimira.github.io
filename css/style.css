@@ -187,4 +187,80 @@ a:hover {
   background: rgba(139, 69, 19, 0.1);
   font-style: italic;
 }
+/* 搜索容器 */
+.search-container {
+  position: relative; /* 结果列表相对于它定位 */
+  width: 300px;
+}
 
+/* 输入框 */
+#search-input {
+  width: 100%;
+  padding: 8px 15px;
+  border: 1px solid #8b4513;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  font-family: 'LXGW WenKai Screen', serif;
+  outline: none;
+  transition: all 0.3s;
+}
+
+#search-input:focus {
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5); /* 聚焦发金光 */
+  border-color: #d4af37;
+}
+
+/* 搜索结果下拉列表 */
+#search-result {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background: #fdfbf7; /* 羊皮纸色 */
+  border: 1px solid #8b4513;
+  border-radius: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 999;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* 结果列表项 */
+.search-result-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-result-list li {
+  padding: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.search-result-list li:hover {
+  background: rgba(139, 69, 19, 0.1);
+}
+
+/* 标题 */
+.search-result-title {
+  color: #8b4513;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+}
+
+/* 摘要内容 */
+.search-result {
+  color: #666;
+  font-size: 0.9em;
+  margin: 5px 0 0 0;
+  line-height: 1.4;
+}
+
+/* 关键词高亮 */
+.search-keyword {
+  color: #d00;
+  font-style: normal;
+  font-weight: bold;
+  background: rgba(255, 255, 0, 0.3);
+}
