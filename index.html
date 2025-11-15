@@ -2,206 +2,167 @@
 <html>
 <head>
   <meta charset="utf-8">
-  
-  
   <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
-
+  <!-- 引入样式表 -->
+<!-- 引入 Cinzel 和 IM Fell English 字体 -->
+  <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
 <meta name="generator" content="Hexo 8.1.1"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+
+  <!-- 顶部导航 -->
+  <header class="wiki-header">
+    <h1><a href="/">Hexo</a></h1>
+    <div class="search-box">搜索功能待开发...</div>
+  </header>
+
+  <div class="wiki-container">
+    <!-- 左侧边栏：永远显示的目录树 -->
+    <aside class="wiki-sidebar">
+      <h3>世界档案</h3>
+      <ul class="category-list">
+        <!-- 自动列出所有的分类 -->
         
-          <a class="main-nav-link" href="/">Home</a>
+          <li><a href="/categories/%E7%A7%8D%E6%97%8F/">种族</a></li>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/11/15/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-11-14T19:52:45.618Z" itemprop="datePublished">2025-11-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/11/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/11/15/hello-world/" data-id="cuiddv7jJp6rfFIjZsESuObcM" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2025/11/15/hello-world/">Hello World</a>
-          </li>
+          <li><a href="/categories/%E7%A7%8D%E6%97%8F/%E5%85%88%E5%8F%A4%E7%A7%8D/">先古种</a></li>
         
       </ul>
-    </div>
-  </div>
+    </aside>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
+    <!-- 右侧内容区：这里会变 -->
+    <main class="wiki-content">
       
-      &copy; 2025 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+<!-- 1. 样式区域：只对当前页面生效 -->
+<style>
+  /* 容器：网格布局，自动适应手机和电脑 */
+  .home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 最小宽280px，不够就换行 */
+    gap: 25px; /* 方块之间的间距 */
+    margin-top: 40px;
+  }
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  /* 单个卡片按钮 */
+  .home-card {
+    display: block; /* 让a标签变成块级元素 */
+    background: rgba(255, 255, 255, 0.6); /* 半透明白色背景 */
+    border: 2px solid #8b4513; /* 棕色边框 */
+    border-radius: 8px; /* 圆角 */
+    padding: 25px;
+    text-decoration: none !important; /* 去掉下划线 */
+    color: #2c241b !important; /* 文字深褐色 */
+    transition: all 0.3s ease; /* 动画过渡 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     
+    /* 让卡片里的内容居中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  /* 鼠标悬停时的特效 */
+  .home-card:hover {
+    transform: translateY(-5px); /* 向上浮动 */
+    background: #fff; /* 背景变白 */
+    box-shadow: 0 10px 20px rgba(139, 69, 19, 0.2); /* 阴影变深 */
+    border-color: #d4af37; /* 边框变金 */
+    cursor: url('/images/cursor-pointer.png') 0 0, pointer; /* 强制切换鼠标 */
+  }
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+  /* 图标 */
+  .card-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    display: block;
+  }
 
+  /* 标题 */
+  .card-title {
+    font-family: 'Cinzel Decorative', 'LXGW WenKai Screen', cursive; /* 用你的标题字体 */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #8b4513;
+  }
 
-
+  /* 描述文字 */
+  .card-desc {
+    font-family: 'LXGW WenKai Screen', serif; /* 用你的正文字体 */
+    font-size: 0.95em;
+    color: #665;
+    line-height: 1.5;
+  }
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+  /* 欢迎语区域 */
+  .intro-box {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #8b4513;
+  }
+</style>
 
 
+<!-- 2. 内容区域：这里就是你要显示的按钮 -->
 
+<div class="intro-box">
+  <h2 style="font-family: 'Cinzel Decorative', 'LXGW WenKai Screen'; color: #8b4513;">欢迎来到FANTAME档案馆</h2>
+  <p style="font-style: italic;">这里记录了FANTAME世界观的一切内容。</p>
+</div>
 
-<script src="/js/script.js"></script>
+<div class="home-grid">
 
+  <!-- 按钮 1 -->
+  <a href="/categories/世界观/" class="home-card">
+    <span class="card-icon">🗺️</span>
+    <span class="card-title">地理全图</span>
+    <span class="card-desc">探索已知世界的版图、气候与禁忌之地。</span>
+  </a>
 
+  <!-- 按钮 2 -->
+  <a href="/categories/种族/" class="home-card">
+    <span class="card-icon">🧝</span>
+    <span class="card-title">种族</span>
+    <span class="card-desc">生命造物的详细图鉴。</span>
+  </a>
 
+  <!-- 按钮 3 -->
+  <a href="/categories/魔法/" class="home-card">
+    <span class="card-icon">🔮</span>
+    <span class="card-title">奥术法则</span>
+    <span class="card-desc">解析魔力源流、八大派系与失传的禁咒。</span>
+  </a>
 
+  <!-- 按钮 4 -->
+  <a href="/categories/历史/" class="home-card">
+    <span class="card-icon">📜</span>
+    <span class="card-title">编年史</span>
+    <span class="card-desc">从创世神话到第三纪元的重大历史事件。</span>
+  </a>
 
+  <!-- 按钮 5 -->
+  <a href="/categories/人物/" class="home-card">
+    <span class="card-icon">👑</span>
+    <span class="card-title">英雄传记</span>
+    <span class="card-desc">诸王、大贤者与传奇冒险者的生平记录。</span>
+  </a>
+
+  <!-- 按钮 6 -->
+  <a href="/about/" class="home-card">
+    <span class="card-icon">🗝️</span>
+    <span class="card-title">机制</span>
+    <span class="card-desc">了解一些作为让世界运转的底层逻辑的机制。</span>
+  </a>
+
+</div> 
+      <!-- ↑↑↑ 这行代码是最重要的，它把具体页面的内容塞到这里 -->
+    </main>
   </div>
+
 </body>
 </html>
