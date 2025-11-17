@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>海尔丝</title>
+    <url>/2025/11/16/CurmurisHeals/</url>
+    <content><![CDATA[ <div class="infobox">
+  <!-- 1. 角色名 -->
+  <div class="infobox-title"> <span class="spoiler">裘姆里丝-</span>海尔丝</div>
+  
+  <!-- 3. 属性列表 -->
+  <table>
+    <tr>
+      <th>身份</th>
+      <td>药剂者/咒术师</td>
+    </tr>
+    <tr>
+      <th>种族</th>
+      <td>界族</td>
+    </tr>
+    <tr>
+      <th>所属阵营</th>
+      <td>净界</td>
+    </tr>
+      <tr>
+      <th>所属时代</th>
+      <td>暗年纪980年</td>
+    </tr>
+    <tr>
+      <th>特异主张</th>
+      <td style="color:red;">拒魔先锋</td>
+    </tr>
+    <tr>
+      <th>生诞月</th>
+      <td><span class="spoiler">冰月4日</span></td>
+    </tr>
+    <tr>
+      <th>状态</th>
+      <td><span class="spoiler">死亡</span></td>
+    </tr>
+   </table>
+   </div>
+
+
+   <hr style="opacity: 0; margin: 20px 0;">
+      <p>
+      作为一名不太寻常的净界之子而存在，是整个暗年纪最行踪不定的净界之子。出生于<span class="spoiler">冰月最寒冷的时节</span>，因为<span class="spoiler">食物匮乏而被父母抛弃</span>，在感知到生命危险时觉醒了作为星之漫游者的特殊力量，紧急传送到了界尘界之外的变化圣所。
+      <p>
+      她是<a href="/2025/11/17/Curmuris/" title="愈月之神">裘姆里丝</a>的转生。]]></content>
+      <categories>
+        <category>人物</category>
+        <category>咒术师</category>
+        <category>净界之子</category>
+        <category>罪行元凶</category>
+        <category>转生</category>
+        <category>月神转生</category>
+        <category>特异主张者</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>古族</title>
+    <url>/2025/11/16/Salwen/</url>
+    <content><![CDATA[<div class="infobox">
+  <!-- 1. 名字 -->
+  <div class="infobox-title"> 古族（Salwen）</div>
+  
+  <!-- 3. 属性列表 -->
+  <table>
+<tr>
+      <th>别名</th>
+      <td>叶魂族/萨尔文族</td>
+    </tr>
+   </table>
+   </div>
+
+
+<hr style="opacity: 0; margin: 20px 0;">
+      <p>
+至古先民，土月之神的眷族。
+]]></content>
+      <categories>
+        <category>种族</category>
+        <category>先古种</category>
+        <category>艾蔻之子</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>愈月之神</title>
+    <url>/2025/11/17/Curmuris/</url>
+    <content><![CDATA[<div class="infobox">
+  <!-- 1. 名字 -->
+  <div class="infobox-title"> 裘姆里丝(Curmuris)</div>
+  
+  <!-- 3. 属性列表 -->
+  <table>
+      <tr>
+      <th>别名</th>
+      <td>悔恨之神/掠食神</td>
+      </tr>
+      <tr>
+      <th>权柄</th>
+      <td>还原/痊愈</td>
+      </tr>
+       <tr>
+      <th>状态</th>
+      <td><span class="spoiler">分裂/转生</span></td>
+      </tr>
+      </table>
+      </div>
+
+
+<hr style="opacity: 0; margin: 20px 0;">
+      <p>
+     代表第三月，愈月的月神，还原与悔恨本身。
+      <p>
+     在四神乱局中做出了令其悔恨终生的事而成为了罪行元凶。]]></content>
+      <categories>
+        <category>人物</category>
+        <category>种族</category>
+        <category>月神</category>
+        <category>艾蔻之子</category>
+        <category>罪行元凶</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/11/15/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -17,15 +138,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Salwen</title>
-    <url>/2025/11/16/Salwen/</url>
-    <content><![CDATA[<p>至古先民，土月之神的眷族。</p>
-]]></content>
-      <categories>
-        <category>种族</category>
-        <category>先古种</category>
-      </categories>
   </entry>
 </search>

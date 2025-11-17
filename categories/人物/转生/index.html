@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World</title>
+  <title>FANTAME_wiki</title>
   <!-- 引入样式表 -->
 <!-- 引入 Cinzel 和 IM Fell English 字体 -->
   <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
@@ -69,35 +69,74 @@
 
     <!-- 右侧内容区：这里会变 -->
     <main class="wiki-content">
-      <article class="post">
-  <h1 class="post-title">Hello World</h1>
+      <div class="breadcrumb" style="margin-bottom: 20px; font-size: 0.9em;">
+  <a href="/">首页</a> &gt; <span>当前分类</span>
+</div>
+<div class="archive-container">
   
-  <div class="post-meta">
-  分类
-     <!-- 找到分类循环部分，替换成下面这段逻辑 -->
-<span class="post-categories">
-  
-</span>
+  <!-- 显示当前页面的标题 -->
+  <div class="archive-header">
+    <h2 class="archive-title">
+<!-- 分类描述显示逻辑 -->
+
+      
+        📂 分类档案：转生
+      
+    </h2>
+    <span class="archive-count">共收录 1 篇文档</span>
   </div>
 
-  <div class="post-content">
-    <!-- 这里输出 Markdown 转换后的正文 -->
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+  <!-- 文章列表 -->
+  <ul class="archive-list">
+    
+      <li class="archive-item">
+        <span class="archive-date">2025-11-16</span>
+        <a class="archive-link" href="/2025/11/16/CurmurisHeals/">海尔丝</a>
+      </li>
+    
+  </ul>
+  
+  <!-- 分页器（如果文章太多，需要翻页） -->
+  <div class="paginator">
+    <span class="page-number current">1</span>
   </div>
-</article> 
+
+</div>
+
+<!-- 对应的简单 CSS，你可以之后挪到 style.css 里 -->
+<style>
+  .archive-header {
+    border-bottom: 2px solid #8b4513;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+  }
+  .archive-title {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #2c241b;
+    margin: 0;
+  }
+  .archive-list {
+    list-style: none;
+    padding: 0;
+  }
+  .archive-item {
+    padding: 15px 0;
+    border-bottom: 1px dashed #ccc;
+    display: flex;
+    align-items: baseline;
+  }
+  .archive-date {
+    font-family: 'Courier New', monospace;
+    color: #888;
+    margin-right: 20px;
+    font-size: 0.9em;
+  }
+  .archive-link {
+    font-size: 1.2em;
+    font-family: 'LXGW WenKai Screen', serif;
+    font-weight: bold;
+  }
+</style> 
       <!-- ↑↑↑ 这行代码是最重要的，它把具体页面的内容塞到这里 -->
     </main>
   </div>

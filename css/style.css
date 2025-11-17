@@ -16,7 +16,7 @@ body {
   background-color: #f3e5d0;    /* 图片加载前的底色 */
   margin: 0;
   /* 设置正文字体：做旧印刷体 */
-  font-family: 'IM Fell English', 'LXGW WenKai Screen', serif; 
+  font-family: 'IM Fell English', 'LXGW WenKai Screen', serif !important; 
   font-size: 18px;
   color: #2c241b; /* 深褐色文字，比纯黑更有质感 */
   text-shadow: 0 0 0.5px rgba(0, 0, 0, 0.3);
@@ -155,23 +155,51 @@ a:hover {
 }
 
 /* 正文排版 */
+/* ===========================
+   正文段落排版优化
+   =========================== */
+.post-content p:has(img) {
+  text-indent: 0 !important;
+  text-align: center; /* 让图片居中 */
+}
+/* 如果浏览器不支持 :has (旧版浏览器)，用这个备选方案 */
+.post-content img {
+  display: block;
+  margin: 20px auto; /* 图片自动居中 */
+}
+/* 修正 B: Infobox 里的文字不要缩进，不然很难看 */
+.infobox p, .infobox td {
+  text-indent: 0 !important;
+}
+/* 修正 C: 标题不要缩进 */
+h1, h2, h3, h4, h5, h6 {
+  text-indent: 0 !important;
+}
+
+
+
 .post-content p {
+  text-indent: 2em;
   line-height: 1.8;
   margin-bottom: 1.5em;
   text-align: justify; /* 两端对齐，像印刷书 */
 }
-.post-content > p:first-child::first-letter {
+.post-content > p:first-of-type {
+  text-indent: 0 !important; /* 关键！取消缩进 */
+}
+.post-content > p:first-of-type::first-letter {
   float: left;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', 'LXGW WenKai Screen', cursive; /* 或者是你用的其他字体 */
   font-size: 3.5em;
   line-height: 0.8;
   padding-right: 10px;
-  color: #8b4513; 
+  color: #8b4513;
+  margin-top: 5px; /* 微调位置 */
   text-shadow: 2px 2px 0px rgba(0,0,0,0.1); 
   opacity: 0.9;
 }
 .post-content h2 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', 'LXGW WenKai Screen', cursive;
   font-size: 1.8em;
   margin-top: 1.5em;
   color: #5e2f0d;
@@ -263,4 +291,123 @@ a:hover {
   font-style: normal;
   font-weight: bold;
   background: rgba(255, 255, 0, 0.3);
+}
+/* ===========================
+   黑幕防剧透 (Spoiler)
+   =========================== */
+.spoiler {
+  background-color: #2c241b; /* 默认背景色：深褐色/黑色 */
+  color: #2c241b;            /* 默认文字色：和背景一样，所以看不见 */
+  
+  padding: 0 5px;            /* 左右留点缝隙 */
+  border-radius: 3px;        /*稍微圆角*/
+  transition: all 0.3s ease; /* 这是一个平滑过渡动画 */
+  cursor: cursor-pointed;              /* 鼠标放上去变成问号 */
+  
+  /* 防止用户试图选中文字来偷看 (可选) */
+  user-select: none; 
+}
+
+/* 鼠标悬停时：显示文字 */
+.spoiler:hover {
+  background-color: transparent; /* 背景变透明 */
+  color: #d00;                   /* 文字变成醒目的红色（或者你想要的颜色） */
+  /* 如果想加删除线表示已死，可以用这个: text-decoration: line-through; */
+}
+/* 专门针对被标记了 spoiler-link 的链接 */
+.spoiler-link {
+  background-color: #2c241b !important;
+  color: #2c241b !important;
+  padding: 2px 5px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: help;
+}
+
+.spoiler-link:hover {
+  background-color: transparent !important;
+  color: #d00 !important;
+}
+
+/* ===========================
+   人物/物品信息框 (Infobox)
+   =========================== */
+.infobox {
+  float: none;
+  width: 300px; /* 卡片固定宽度 */
+  margin: 30px auto; /* 左边和下边留点空隙给正文 */
+  /* 外观：像一张贴在纸上的小卡片 */
+  background: rgba(255, 255, 255, 0.5); /* 半透明底色 */
+  border: 2px solid #8b4513; /* 棕色边框 */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  font-size: 0.9em;
+  clear: right; /* 防止多个卡片重叠 */
+}
+
+/* 手机端适配：屏幕太窄时就不浮动了，占满整行 */
+@media (max-width: 768px) {
+  .infobox {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+/* 头像图片 */
+.infobox-image {
+  width: 100%;
+  border: 1px solid #aaa;
+  margin-bottom: 10px;
+  /* 如果想让图片也有正片叠底效果，把下面这行注释去掉 */
+  /* mix-blend-mode: multiply; */
+}
+
+/* 表格样式 */
+.infobox table {
+  font-size: 1em;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.infobox th {
+  text-align: left;
+  color: #8b4513;
+  border-bottom: 1px dashed #ccc;
+  padding: 5px 0;
+  width: 40%; /* 属性名占宽 */
+}
+
+.infobox td {
+  text-align: justify; /* 内容靠右对齐 */
+  padding: 5px 0;
+  border-bottom: 1px dashed #ccc;
+  color: #333;
+}
+
+.infobox-title {
+  text-align: center;
+  font-family: 'Cinzel Decorative', 'LXGW WenKai Screen', cursive;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #5e2f0d;
+  border-bottom: 2px solid #8b4513;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.category-intro {
+  margin: 20px 0 40px 0; /* 上下留白 */
+  padding: 15px 20px;
+  background: rgba(139, 69, 19, 0.08); /* 淡淡的棕色背景 */
+  border-left: 4px solid #8b4513; /* 左边加个竖条 */
+  border-radius: 0 4px 4px 0;
+}
+
+.category-intro p {
+  margin: 0;
+  font-family: 'LXGW WenKai Screen', cursive; /* 用你的手写体 */
+  font-style: italic; /* 斜体 */
+  font-size: 1.1em;
+  color: #5e2f0d;
 }
