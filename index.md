@@ -22,7 +22,9 @@
 - 物件
 - 概念
 - 事件
-- 正文
+<a class="wiki-card" href="{{ '/novel-fantame-zero/' | relative_url }}">
+  <div class="wiki-card-title">正文阅读</div>
+</a>
   
 ## 当前状态
 
