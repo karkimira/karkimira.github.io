@@ -1,0 +1,12 @@
+title: 《时幻书/Fantame》资料库
+description: 人物、地点、组织与世界设定
+lang: zh-CN
+
+theme: jekyll-theme-cayman
+show_downloads: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
