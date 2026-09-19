@@ -7,8 +7,6 @@
 > **剧透提醒：** 本站的剧透部分将以黑条形式出现。
 
 ## 资料分类
-
-## 资料分类
 <div class="wiki-grid">
   <a class="wiki-card" href="{{ '/characters/' | relative_url }}">
     <div class="wiki-card-title">人物</div>
