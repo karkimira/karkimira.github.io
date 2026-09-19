@@ -3,7 +3,75 @@
 
 @import "{{ site.theme }}";
 
-/* Wiki 分类卡片区域 */
+/* =========================
+   网站整体配色
+   ========================= */
+
+:root {
+  --background: #08111f;
+  --surface: #101c2e;
+  --surface-hover: #16263d;
+  --border: #293b55;
+
+  --text: #e6edf7;
+  --text-muted: #aebed1;
+  --heading: #ffffff;
+
+  --link: #74b9ff;
+  --link-hover: #a8d4ff;
+  --accent: #5ca8ff;
+}
+
+/* 整个网页背景 */
+html,
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* 正文区域 */
+.main-content {
+  color: var(--text);
+}
+
+/* 标题颜色 */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: var(--heading);
+}
+
+/* 普通链接 */
+.main-content a {
+  color: var(--link);
+}
+
+.main-content a:hover {
+  color: var(--link-hover);
+}
+
+/* =========================
+   页面顶部标题区域
+   ========================= */
+
+.page-header {
+  color: #ffffff;
+  background-color: #0d1b2e;
+  background-image: linear-gradient(135deg, #101f35, #17365d);
+}
+
+.project-name,
+.project-tagline {
+  color: #ffffff;
+}
+
+/* =========================
+   Wiki 分类卡片
+   ========================= */
+
 .wiki-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -11,47 +79,118 @@
   margin: 24px 0;
 }
 
-/* 单张文字卡片 */
 .wiki-card {
   display: block;
   padding: 28px 20px;
-  color: #334155 !important;
+  color: var(--text) !important;
   text-align: center;
   text-decoration: none !important;
-  background: #ffffff;
-  border: 1px solid #d8dee9;
+
+  background-color: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-/* 鼠标移到卡片上 */
 .wiki-card:hover {
-  color: #334155 !important;
-  border-color: #159957;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+  color: var(--text) !important;
+  background-color: var(--surface-hover);
+  border-color: var(--accent);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   transform: translateY(-4px);
 }
 
-/* 卡片标题 */
 .wiki-card-title {
   margin-bottom: 8px;
-  color: #159957;
+  color: var(--heading);
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-/* 卡片说明 */
 .wiki-card-description {
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 0.92rem;
   line-height: 1.6;
 }
 
-/* 手机屏幕改为单列 */
+/* =========================
+   表格
+   ========================= */
+
+.main-content table {
+  color: var(--text);
+}
+
+.main-content table th {
+  color: var(--heading);
+  background-color: #15243a;
+  border-color: var(--border);
+}
+
+.main-content table td {
+  color: var(--text);
+  background-color: #0d1828;
+  border-color: var(--border);
+}
+
+/* =========================
+   引用、代码和分隔线
+   ========================= */
+
+.main-content blockquote {
+  color: var(--text-muted);
+  border-left-color: var(--accent);
+}
+
+.main-content code {
+  color: #d7e9ff;
+  background-color: #16243a;
+}
+
+.main-content pre {
+  color: #d7e9ff;
+  background-color: #101b2c;
+  border-color: var(--border);
+}
+
+.main-content pre code {
+  background-color: transparent;
+}
+
+.main-content hr {
+  background-color: var(--border);
+}
+
+/* =========================
+   页面底部
+   ========================= */
+
+.site-footer {
+  color: var(--text-muted);
+  border-top-color: var(--border);
+}
+
+.site-footer-owner,
+.site-footer-credits {
+  color: var(--text-muted);
+}
+
+.site-footer a {
+  color: var(--link);
+}
+
+/* =========================
+   手机屏幕
+   ========================= */
+
 @media screen and (max-width: 600px) {
   .wiki-grid {
     grid-template-columns: 1fr;
