@@ -9,8 +9,8 @@
 ## 资料分类
 
 - [人物](characters/)
-- 地点
-- 组织
+- [地点](locations/)
+- [组织](organizations/)
 - 种族
 - 物件
 - 概念
