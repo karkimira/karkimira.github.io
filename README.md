@@ -1,0 +1,1 @@
+# fantame-wiki
