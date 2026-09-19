@@ -8,9 +8,18 @@
 
 ## 资料分类
 
-- [人物](characters/)
-- [地点](locations/)
-- [组织](organizations/)
+## 资料分类
+<div class="wiki-grid">
+  <a class="wiki-card" href="{{ '/characters/' | relative_url }}">
+    <div class="wiki-card-title">人物</div>
+  </a>
+  <a class="wiki-card" href="{{ '/locations/' | relative_url }}">
+    <div class="wiki-card-title">地点</div>
+  </a>
+  <a class="wiki-card" href="{{ '/organizations/' | relative_url }}">
+    <div class="wiki-card-title">组织</div>
+  </a>
+</div>
 - 种族
 - 物件
 - 概念
