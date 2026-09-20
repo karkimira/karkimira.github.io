@@ -196,3 +196,221 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   小说阅读页面
+   ========================= */
+
+.reader-page {
+  min-height: 100vh;
+  margin: 0;
+  color: #e6edf7;
+  background-color: #08111f;
+  font-family:
+    "Noto Serif SC",
+    "Source Han Serif SC",
+    "Songti SC",
+    "SimSun",
+    serif;
+}
+
+/* 阅读页顶部导航 */
+.reader-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background-color: rgba(8, 17, 31, 0.94);
+  border-bottom: 1px solid #293b55;
+  backdrop-filter: blur(10px);
+}
+
+.reader-topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 760px;
+  min-height: 56px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.reader-topbar a {
+  color: #a8d4ff;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.reader-topbar a:hover {
+  color: #ffffff;
+}
+
+.reader-topbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* 阅读区整体宽度 */
+.reader-shell {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 52px 28px 80px;
+}
+
+/* 章节标题 */
+.chapter-header {
+  margin-bottom: 54px;
+  text-align: center;
+}
+
+.chapter-work {
+  margin: 0 0 14px;
+  color: #8da5bf;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+}
+
+.chapter-header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.chapter-subtitle {
+  margin: 14px 0 0;
+  color: #aebed1;
+  font-size: 1rem;
+}
+
+/* 小说正文 */
+.chapter-content {
+  color: #e6edf7;
+  font-size: 1.08rem;
+  line-height: 2;
+  overflow-wrap: break-word;
+}
+
+.chapter-content p {
+  margin: 0 0 1.25em;
+  text-indent: 2em;
+}
+
+.chapter-content h2,
+.chapter-content h3 {
+  margin-top: 2.5em;
+  color: #ffffff;
+}
+
+.chapter-content blockquote {
+  margin: 2em 0;
+  padding: 0.5em 1.2em;
+  color: #b9c8d8;
+  border-left: 3px solid #5ca8ff;
+}
+
+.chapter-content hr {
+  width: 35%;
+  height: 1px;
+  margin: 3.5em auto;
+  background-color: #293b55;
+  border: 0;
+}
+
+.chapter-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2.5em auto;
+  border-radius: 8px;
+}
+
+/* 章节底部导航 */
+.chapter-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+
+  margin-top: 64px;
+  padding-top: 28px;
+  border-top: 1px solid #293b55;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.chapter-navigation a,
+.chapter-navigation-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 46px;
+  padding: 8px 12px;
+
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #293b55;
+  border-radius: 8px;
+}
+
+.chapter-navigation a {
+  color: #d7e9ff;
+  background-color: #101c2e;
+}
+
+.chapter-navigation a:hover {
+  color: #ffffff;
+  background-color: #16263d;
+  border-color: #5ca8ff;
+}
+
+.chapter-navigation-disabled {
+  color: #53657b;
+  background-color: transparent;
+}
+
+/* 手机阅读页面 */
+@media screen and (max-width: 600px) {
+  .reader-topbar-inner {
+    padding: 0 16px;
+  }
+
+  .reader-topbar-links {
+    gap: 12px;
+  }
+
+  .reader-shell {
+    padding: 36px 20px 60px;
+  }
+
+  .chapter-header {
+    margin-bottom: 40px;
+  }
+
+  .chapter-header h1 {
+    font-size: 1.65rem;
+  }
+
+  .chapter-content {
+    font-size: 1.03rem;
+    line-height: 1.95;
+  }
+
+  .chapter-navigation {
+    grid-template-columns: 1fr;
+  }
+}
