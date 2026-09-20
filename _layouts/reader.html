@@ -14,7 +14,13 @@
     href="{{ '/assets/css/style.css' | relative_url }}"
   >
 </head>
-<body class="reader-page">
+<body
+  class="reader-page"
+  data-reader-page
+  data-work-id="{{ page.work_id | escape }}"
+  data-work-title="{{ page.work | escape }}"
+  data-chapter-title="{{ page.title | escape }}"
+>
   {% assign library_url = page.library %}
   {% unless library_url %}
     {% assign library_url = '/novels/' %}
@@ -71,5 +77,9 @@
       </nav>
     </article>
   </main>
+<script
+  src="{{ '/assets/js/reading-progress.js' | relative_url }}"
+  defer
+></script>
 </body>
 </html>
