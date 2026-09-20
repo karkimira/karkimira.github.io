@@ -8,7 +8,21 @@
 
 > **阅读提示：** 小说仍在连载中，章节内容可能会继续修订。
 > **介绍：** 作为《时幻书》的前传，讲诉亚歇尔在来到时幻界之前的平凡故事。
-
+<div
+  class="novel-total-panel"
+  data-novel-total
+  data-book-root="{{ '/novels/prequel/' | relative_url }}"
+>
+  <span class="novel-total-label">
+    正文总计
+  </span>
+  <strong data-total-words>
+    正在统计…
+  </strong>
+  <small data-total-detail>
+    正在读取章节
+  </small>
+</div>
 ## 第一卷：尤城之影
 - [序章    ：一则预言](volume-01/chapter-000/)
 - [第一章  ：起始](volume-01/chapter-001/)
@@ -130,3 +144,7 @@
 更多章节正在整理中。
 
 [返回 Wiki 首页](../)
+<script
+  src="{{ '/assets/js/novel-total-count.js' | relative_url }}"
+  defer
+></script>
