@@ -2,6 +2,7 @@
 layout: reader
 title: "序章：一则预言"
 work: "《时幻书：零》"
+work_id: fantame-zero
 library: /novels/
 catalog: /novels/fantame-zero/
 next: /novels/prequel/volume-01/chapter-001/
