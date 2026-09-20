@@ -39,7 +39,35 @@
     </div>
   </header>
   <main class="reader-shell">
-    <article class="novel-reader">
+    <section
+    class="reading-position-notice"
+    data-reading-position-notice
+    aria-live="polite"
+    hidden
+  >
+    <div class="reading-position-message">
+      检测到你上次阅读到本章约
+      <strong data-reading-position-percent>0%</strong>
+      的位置。
+      </div>
+    <div class="reading-position-actions">
+      <button
+        type="button"
+        class="reading-position-restore"
+        data-restore-reading-position
+      >
+        回到上次位置
+      </button>
+    <button
+        type="button"
+        class="reading-position-dismiss"
+        data-dismiss-reading-position
+      >
+        暂不恢复
+      </button>
+    </div>
+  </section>
+  <article class="novel-reader">
       <header class="chapter-header">
   {% if page.work %}
     <p class="chapter-work">{{ page.work }}</p>
