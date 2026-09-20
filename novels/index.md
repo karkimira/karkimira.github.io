@@ -1,5 +1,31 @@
 # 小说正文
 这里收录本系列的小说。
+
+<section class="continue-reading-panel">
+  <p class="continue-reading-label">
+    阅读记录
+  </p>
+  <a
+    class="continue-reading-button"
+    data-continue-reading
+    hidden
+  >
+    <span class="continue-reading-action">
+      继续上次阅读
+</span>
+    <strong data-continue-title>
+      章节名称
+    </strong>
+    <span data-continue-work></span>
+  </a>
+  <p
+    class="continue-reading-empty"
+data-no-reading
+  >
+    打开任意章节后，这里会显示上次阅读的章节。
+  </p>
+</section>
+    
 ## 故事时间顺序
 1. 《时幻书：暗年纪的孩子们》
 2. 《时幻书：零》
@@ -22,5 +48,8 @@
   </a>
 </div>
 [返回 Wiki 首页](../)
-
+<script
+  src="{{ '/assets/js/reading-progress.js' | relative_url }}"
+  defer
+></script>
 
