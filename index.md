@@ -17,15 +17,15 @@
   <a class="wiki-card" href="{{ '/organizations/' | relative_url }}">
     <div class="wiki-card-title">组织</div>
   </a>
+  <a class="wiki-card" href="{{ '/novel/' | relative_url }}">
+  <div class="wiki-card-title">正文阅读</div>
+</a>
 </div>
 - 种族
 - 物件
 - 概念
 - 事件
-<a class="wiki-card" href="{{ '/novel/novel-fantame-zero' | relative_url }}">
-  <div class="wiki-card-title">正文阅读</div>
-</a>
-  
+
 ## 当前状态
 
 本站正在建设中。
