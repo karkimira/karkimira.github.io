@@ -491,3 +491,39 @@ body {
 .continue-reading-empty[hidden] {
   display: none;
 }
+/* =========================
+   小说总字数
+   ========================= */
+
+.novel-total-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin: 24px 0 32px;
+  padding: 18px 20px;
+
+  background-color: #101c2e;
+  border: 1px solid #293b55;
+  border-radius: 10px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.24);
+}
+
+.novel-total-label {
+  color: #8296ad;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.novel-total-panel strong {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.novel-total-panel small {
+  color: #aebed1;
+  font-size: 0.78rem;
+}
