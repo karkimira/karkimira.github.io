@@ -4,6 +4,7 @@ title: "序章：一则预言"
 work: "《时幻书：零》"
 library: /novels/
 catalog: /novels/fantame-zero/
+next: /novels/prequel/volume-01/chapter-001/
 ---
 
 “你就这样决定了，把这个孩子交给我？”，带着十字面具的女人看着面前那位棕发绿眸的骑将，道：“你明明知道我没有这个精力。”
