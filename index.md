@@ -17,7 +17,7 @@
   <a class="wiki-card" href="{{ '/organizations/' | relative_url }}">
     <div class="wiki-card-title">组织</div>
   </a>
-  <a class="wiki-card" href="{{ '/novel/' | relative_url }}">
+  <a class="wiki-card" href="{{ '/novels/' | relative_url }}">
   <div class="wiki-card-title">正文阅读</div>
 </a>
 </div>
