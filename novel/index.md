@@ -8,13 +8,13 @@
 1. 《时幻书：零》
 2. 《时幻书：暗年纪的孩子们》
 <div class="wiki-grid">
-  <a class="wiki-card" href="{{ '/novels/fantame-zero/' | relative_url }}">
+  <a class="wiki-card" href="{{ '/novel/novel-fantame-zero/' | relative_url }}">
     <div class="wiki-card-title">《时幻书：零》</div>
     <div class="wiki-card-description">
       正作前传，讲述正篇故事发生之前的事件。
     </div>
   </a>
-  <a class="wiki-card" href="{{ '/novels/children-of_darkyear/' | relative_url }}">
+  <a class="wiki-card" href="{{ '/novel/novel-children-of_darkyear/' | relative_url }}">
     <div class="wiki-card-title">《时幻书：暗年纪的孩子们》</div>
     <div class="wiki-card-description">
       正作前传，比《时幻书：零》更早，讲诉一千年前的故事。
