@@ -11,7 +11,7 @@
 <div
   class="novel-total-panel"
   data-novel-total
-  data-book-root="{{ '/novels/prequel/' | relative_url }}"
+  data-book-root="{{ '/novels/fantame-zero/' | relative_url }}"
 >
   <span class="novel-total-label">
     正文总计
