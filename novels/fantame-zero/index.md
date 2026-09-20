@@ -146,6 +146,7 @@
 更多章节正在整理中。
 
 [返回 Wiki 首页](../)
+
 <script
   src="{{ '/assets/js/novel-total-count.js' | relative_url }}"
   defer
