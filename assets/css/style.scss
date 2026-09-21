@@ -1015,3 +1015,276 @@ body {
 .main-content .spoiler-block p:last-child {
   margin-bottom: 0;
 }
+/* =========================
+   人物证件卡
+   ========================= */
+
+.main-content .character-id-card {
+  position: relative;
+  max-width: 760px;
+  margin: 1.8rem auto 2.4rem;
+  overflow: hidden;
+
+  color: #352c20;
+
+  background-color: #d8c298;
+  background-image:
+    radial-gradient(
+      circle at 18% 22%,
+      rgba(255, 255, 255, 0.22) 0,
+      rgba(255, 255, 255, 0.22) 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 76% 68%,
+      rgba(76, 51, 25, 0.1) 0,
+      rgba(76, 51, 25, 0.1) 1px,
+      transparent 2px
+    ),
+    linear-gradient(
+      135deg,
+      #ead9b3 0%,
+      #dbc49a 48%,
+      #cbb181 100%
+    );
+
+  background-size:
+    31px 29px,
+    37px 41px,
+    auto;
+
+  border: 1px solid #8a7048;
+  border-radius: 10px;
+
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.38),
+    inset 0 0 30px rgba(101, 68, 31, 0.12);
+}
+
+/* 旧纸张上的轻微横向纹理 */
+.main-content .character-id-card::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  content: "";
+  pointer-events: none;
+
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(82, 57, 31, 0.025) 0,
+    rgba(82, 57, 31, 0.025) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+/* 确保卡片内容显示在纸张纹理之上 */
+.main-content .character-id-header,
+.main-content .character-id-body {
+  position: relative;
+  z-index: 1;
+}
+
+/* 卡片顶部 */
+.main-content .character-id-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 15px 20px 13px;
+
+  border-bottom: 1px solid rgba(91, 65, 34, 0.42);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.main-content .character-id-category {
+  display: block;
+  margin-bottom: 2px;
+
+  color: #715b3b;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.main-content .character-id-heading {
+  color: #30271d;
+  font-family:
+    "Noto Serif SC",
+    "Source Han Serif SC",
+    "Songti SC",
+    serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.main-content .character-id-number {
+  color: #6b5739;
+  font-family:
+    "Courier New",
+    monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* 头像与资料的左右布局 */
+.main-content .character-id-body {
+  display: grid;
+  grid-template-columns: minmax(145px, 190px) 1fr;
+  gap: 22px;
+
+  padding: 20px;
+}
+
+/* 头像区域 */
+.main-content .character-id-photo {
+  align-self: start;
+  padding: 7px;
+
+  background-color: #f0e2c3;
+  border: 1px solid #8e744d;
+
+  box-shadow:
+    0 4px 10px rgba(76, 51, 25, 0.22),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.32);
+}
+
+.main-content .character-id-photo img {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+
+  border: 1px solid rgba(78, 56, 32, 0.45);
+}
+
+/* 右侧资料区域 */
+.main-content .character-id-information {
+  min-width: 0;
+}
+
+.main-content .character-id-list {
+  margin: 0;
+}
+
+/* 每一行信息 */
+.main-content .character-id-row {
+  display: grid;
+  grid-template-columns: 6em minmax(0, 1fr);
+  gap: 12px;
+
+  padding: 10px 4px;
+
+  border-bottom: 1px solid rgba(91, 65, 34, 0.26);
+}
+
+.main-content .character-id-row:first-child {
+  padding-top: 2px;
+}
+
+.main-content .character-id-row:last-child {
+  border-bottom: 0;
+}
+
+/* 字段名称 */
+.main-content .character-id-row dt {
+  margin: 0;
+
+  color: #6b5537;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* 字段内容 */
+.main-content .character-id-row dd {
+  min-width: 0;
+  margin: 0;
+
+  color: #302820;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* 卡片里的链接使用适合旧纸张的颜色 */
+.main-content .character-id-card a {
+  color: #664718;
+  font-weight: 600;
+  text-decoration-color: rgba(102, 71, 24, 0.5);
+}
+
+.main-content .character-id-card a:hover {
+  color: #39250b;
+  text-decoration-color: #39250b;
+}
+
+/* 卡片中的剧透揭晓后恢复深色字体 */
+.main-content
+  .character-id-card
+  .spoiler.is-revealed {
+  color: #302820 !important;
+  background-color: rgba(255, 248, 224, 0.45);
+  border-color: #72572f;
+}
+
+.main-content
+  .character-id-card
+  .spoiler.is-revealed
+  a {
+  color: #664718 !important;
+}
+
+/* 平板与普通手机 */
+@media screen and (max-width: 600px) {
+  .main-content .character-id-card {
+    margin: 1.4rem 0 2rem;
+  }
+
+  .main-content .character-id-header {
+    padding: 13px 14px 11px;
+  }
+
+  .main-content .character-id-heading {
+    font-size: 1.15rem;
+  }
+
+  .main-content .character-id-body {
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 14px;
+
+    padding: 14px;
+  }
+
+  .main-content .character-id-row {
+    display: block;
+    padding: 7px 2px;
+  }
+
+  .main-content .character-id-row dt {
+    margin-bottom: 2px;
+    font-size: 0.73rem;
+  }
+
+  .main-content .character-id-row dd {
+    font-size: 0.86rem;
+  }
+}
+
+/* 很窄的手机改成上下布局 */
+@media screen and (max-width: 400px) {
+  .main-content .character-id-body {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content .character-id-photo {
+    width: min(180px, 70%);
+    margin: 0 auto;
+  }
+}
