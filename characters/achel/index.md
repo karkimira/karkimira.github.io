@@ -75,7 +75,7 @@
 </div>
 
 ## 人际关系
-- **养姐**：菲莉卡-泽里克亚契
+- **养姐**：[菲莉卡-泽里克亚契](../../characters/ferica/)
 - **母亲**：<span class="spoiler">西涅尔-涅恩斯</span>
 - **祖先**：<span class="spoiler">艾克莉娅-“残刃”-涅恩斯</span>
 ## 外貌
