@@ -42,8 +42,8 @@
          <dd>17岁</dd>
        </div>
         <div class="character-id-row">
-          <dt>首次登场</dt>
-          <dd>《时幻书：零》序章</dd>
+          <dt>位阶</dt>
+          <dd>承位 <span class="spoiler">王座</span></dd>
         </div>
         <div class="character-id-row">
          <dt>种族</dt>
