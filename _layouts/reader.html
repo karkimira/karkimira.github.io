@@ -29,15 +29,67 @@
   {% unless catalog_url %}
     {% assign catalog_url = library_url %}
   {% endunless %}
-  <header class="reader-topbar">
-    <div class="reader-topbar-inner">
-      <a href="{{ library_url | relative_url }}">作品总目录</a>
-      <div class="reader-topbar-links">
-        <a href="{{ catalog_url | relative_url }}">本书目录</a>
-        <a href="{{ '/' | relative_url }}">Wiki 首页</a>
-      </div>
-    </div>
+  <aside
+  id="reader-sidebar"
+  class="reader-sidebar"
+  data-reader-sidebar
+  data-catalog-url="{{ catalog_url | relative_url }}"
+  aria-label="章节目录"
+>
+  <header class="reader-sidebar-header">
+    <strong>本书目录</strong>
+    <button
+      type="button"
+      class="reader-sidebar-close"
+      data-sidebar-close
+    >
+      关闭
+    </button>
   </header>
+  <nav
+    class="reader-sidebar-nav"
+    data-sidebar-content
+    aria-label="小说章节"
+  >
+    <p class="reader-sidebar-status" data-sidebar-status>
+      正在加载章节目录……
+    </p>
+  </nav>
+</aside>
+<button
+  type="button"
+  class="reader-sidebar-overlay"
+  data-sidebar-overlay
+  tabindex="-1"
+  aria-label="关闭章节目录"
+  aria-hidden="true"
+></button>
+  <header class="reader-topbar">
+  <div class="reader-topbar-inner">
+    <div class="reader-topbar-leading">
+      <button
+        type="button"
+        class="reader-sidebar-toggle"
+        data-sidebar-toggle
+        aria-controls="reader-sidebar"
+        aria-expanded="false"
+      >
+        章节
+      </button>
+      <a href="{{ library_url | relative_url }}">
+        作品总目录
+      </a>
+    </div>
+    <div class="reader-topbar-links">
+      <a href="{{ catalog_url | relative_url }}">
+        本书目录
+      </a>
+      <a href="{{ '/' | relative_url }}">
+        Wiki 首页
+      </a>
+    </div>
+  </div>
+</header>
   <main class="reader-shell">
     <section
     class="reading-position-notice"
@@ -110,6 +162,7 @@
       </nav>
     </article>
   </main>
+  </div>
   <script
     src="{{ '/assets/js/reading-progress.js' | relative_url }}"
     defer
@@ -118,5 +171,9 @@
     src="{{ '/assets/js/chapter-word-count.js' | relative_url }}"
     defer
   ></script>
+  <script
+  src="{{ '/assets/js/reader-sidebar.js' | relative_url }}"
+  defer
+></script>
 </body>
 </html>
