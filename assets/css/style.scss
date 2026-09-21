@@ -894,3 +894,47 @@ body {
     display: none;
   }
 }
+/* =========================
+   电脑端章节侧边栏开关
+   ========================= */
+
+@media screen and (min-width: 901px) {
+  /* 电脑端显示顶部目录按钮 */
+  .reader-sidebar-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 电脑端显示侧边栏内的收起按钮 */
+  .reader-sidebar-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 侧边栏动画 */
+  .reader-sidebar {
+    transition:
+      transform 0.25s ease,
+      visibility 0.25s ease;
+  }
+
+  /* 正文区域动画 */
+  .reader-main-area {
+    transition: margin-left 0.25s ease;
+  }
+
+  /* 电脑端收起侧边栏 */
+  .reader-page.sidebar-collapsed
+    .reader-sidebar {
+    visibility: hidden;
+    transform: translateX(-100%);
+  }
+
+  /* 收起后释放侧边栏占用的空间 */
+  .reader-page.sidebar-collapsed
+    .reader-main-area {
+    margin-left: 0;
+  }
+}
