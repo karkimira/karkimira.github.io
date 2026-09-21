@@ -23,7 +23,7 @@
 
 ## 成员
 
-- 菲莉卡
+- [菲莉卡](../../characters/ferica/)
 - [亚歇尔](../../characters/achel/)
 - 奈瓦西丝
 - 梅尔塔
