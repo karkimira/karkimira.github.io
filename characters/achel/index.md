@@ -11,15 +11,59 @@
 
 ## 基本信息
 
-| 项目 | 内容 |
-|---|---|
-| 姓名 | 亚歇尔-泽里克亚契 |
-| 真名 | <span class="spoiler">亚歇尔-涅恩斯</span> |
-| 首次登场 | 《时幻书：零》序章 |
-| 所属组织 | 伊莱蒙德学院 |
-| 出生地 | 界间界 |
-| 当前状态 | 随不同结局变化 |
-
+<div class="character-id-card">
+  <div class="character-id-header">
+    <div>
+      <span class="character-id-category">CHARACTER RECORD</span>
+      <div class="character-id-heading">人物档案</div>
+    </div>
+    <span class="character-id-number">No. 001</span>
+  </div>
+  <div class="character-id-body">
+    <div class="character-id-photo">
+      <img
+        src="achel.jpg"
+        alt="角色头像"
+      >
+    </div>
+    <div class="character-id-information">
+      <dl class="character-id-list">
+        <div class="character-id-row">
+          <dt>姓名</dt>
+        <dd>亚歇尔-泽里克亚契</dd>
+        </div>
+        <div class="character-id-row">
+          <dt>真名</dt>
+          <dd>亚歇尔-<span class="spoiler">涅恩斯</span></dd>
+        </div>
+        <div class="character-id-row">
+          <dt>首次登场</dt>
+          <dd>《时幻书：零》序章</dd>
+        </div>
+        <div class="character-id-row">
+          <dt>所属组织</dt>
+          <dd>
+            <a href="../../organizations/team-fantame/">
+              探险队“时幻”
+            </a>
+          </dd>
+        </div>
+        <div class="character-id-row">
+          <dt>出生地</dt>
+          <dd>
+            <a href="../../locations/yokayel/">
+              界间界-尤卡耶尔
+            </a>
+          </dd>
+        </div>
+        <div class="character-id-row">
+          <dt>当前状态</dt>
+          <dd>存活</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
 ## 外貌
 
 有着红色眼睛的棕发少女
