@@ -938,3 +938,80 @@ body {
     margin-left: 0;
   }
 }
+/* =========================
+   Wiki 剧透黑条
+   ========================= */
+
+/* 默认隐藏状态 */
+.main-content .spoiler {
+  color: transparent !important;
+  text-shadow: none !important;
+
+  background-color: #02050a;
+  border: 1px solid #182334;
+  border-radius: 4px;
+
+  padding: 0.06em 0.35em;
+
+  cursor: pointer;
+  user-select: none;
+
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+
+  transition:
+    color 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+/* 隐藏剧透中的加粗、链接等内容 */
+.main-content .spoiler:not(.is-revealed) * {
+  color: transparent !important;
+  text-shadow: none !important;
+}
+
+/* 点击后显示 */
+.main-content .spoiler.is-revealed {
+  color: #e6edf7 !important;
+
+  background-color: #17263a;
+  border-color: #5ca8ff;
+
+  user-select: text;
+}
+
+/* 显示内部文字 */
+.main-content .spoiler.is-revealed * {
+  color: inherit !important;
+}
+
+/* 显示后的内部链接 */
+.main-content .spoiler.is-revealed a {
+  color: #74b9ff !important;
+}
+
+/* 键盘选中时的边框 */
+.main-content .spoiler:focus-visible {
+  outline: 2px solid #74b9ff;
+  outline-offset: 2px;
+}
+
+/* 整段剧透 */
+.main-content .spoiler-block {
+  display: block;
+
+  margin: 1.2em 0;
+  padding: 14px 16px;
+
+  line-height: 1.8;
+}
+
+/* 整段剧透中的段落间距 */
+.main-content .spoiler-block p {
+  margin: 0 0 1em;
+}
+
+.main-content .spoiler-block p:last-child {
+  margin-bottom: 0;
+}
