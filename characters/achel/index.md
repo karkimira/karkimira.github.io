@@ -34,6 +34,14 @@
           <dd>亚歇尔-<span class="spoiler">涅恩斯</span></dd>
         </div>
         <div class="character-id-row">
+          <dt>生日</dt>
+         <dd>圣座纪1000年土<span class="spoiler">风</span>月13日</dd>
+       </div>
+        <div class="character-id-row">
+          <dt>年龄</dt>
+         <dd>17岁</dd>
+       </div>
+        <div class="character-id-row">
           <dt>首次登场</dt>
           <dd>《时幻书：零》序章</dd>
         </div>
@@ -45,10 +53,6 @@
         <dt>道路</dt>
         <dd>咒术使<span class="spoiler">调令者</span></dd>
          </div>
-         <div class="character-id-row">
-          <dt>生日</dt>
-         <dd>圣座纪1000年土<span class="spoiler">风</span>月13日</dd>
-       </div>
          <div class="character-id-row">
           <dt>所属组织</dt>
           <dd>
