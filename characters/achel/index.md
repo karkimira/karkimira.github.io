@@ -38,7 +38,6 @@
           <dd>《时幻书：零》序章</dd>
         </div>
         <div class="character-id-row">
-          <div class="character-id-row">
          <dt>种族</dt>
          <dd><span class="spoiler">黑日子嗣</span></dd>
          </div>
@@ -50,6 +49,7 @@
           <dt>生日</dt>
          <dd>圣座纪1000年土<span class="spoiler">风</span>月13日</dd>
        </div>
+         <div class="character-id-row">
           <dt>所属组织</dt>
           <dd>
             <a href="../../organizations/team-fantame/">
