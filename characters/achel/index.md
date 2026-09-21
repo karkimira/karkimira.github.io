@@ -11,8 +11,8 @@
 <div class="character-id-card">
   <div class="character-id-header">
     <div>
-      <span class="character-id-category">CHARACTER RECORD</span>
-      <div class="character-id-heading">人物档案</div>
+      <span class="character-id-category">书库档案</span>
+      <div class="character-id-heading">人物数据</div>
     </div>
     <span class="character-id-number">No. 001</span>
   </div>
