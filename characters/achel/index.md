@@ -69,12 +69,6 @@
             </a>
           </dd>
         </div>
-        <div class="character-id-row">
-          <dt>状态</dt>
-           <span class="spoiler">
-      随结局而变化
-    </span>
-        </div>
       </dl>
     </div>
   </div>
