@@ -54,8 +54,10 @@
           </dd>
         </div>
         <div class="character-id-row">
-          <dt>当前状态</dt>
-          <dd>存活</dd>
+          <dt>状态</dt>
+           <span class="spoiler">
+      随结局而变化
+    </span>
         </div>
       </dl>
     </div>
