@@ -30,8 +30,8 @@
         <dd>亚歇尔-泽里克亚契</dd>
         </div>
         <div class="character-id-row">
-          <dt>真名</dt>
-          <dd>亚歇尔-<span class="spoiler">涅恩斯</span></dd>
+          <dt>别名</dt>
+          <dd>亚歇尔-<span class="spoiler">涅恩斯</span>、<span class="spoiler">茵提尔-涅恩斯</span>、<span class="spoiler">启示者方舟</span></dd>
         </div>
         <div class="character-id-row">
           <dt>生日</dt>
