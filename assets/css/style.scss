@@ -1801,3 +1801,136 @@ body {
     margin: 0 auto;
   }
 }
+/* =========================
+   角色卡正面：旧书卷风格
+   背面继续保持黑红风格
+   ========================= */
+
+.main-content .character-card-front {
+  color: #352c20;
+
+  background-color: #d8c298;
+  background-image:
+    radial-gradient(
+      circle at 18% 22%,
+      rgba(255, 255, 255, 0.24) 0,
+      rgba(255, 255, 255, 0.24) 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 76% 68%,
+      rgba(76, 51, 25, 0.1) 0,
+      rgba(76, 51, 25, 0.1) 1px,
+      transparent 2px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(82, 57, 31, 0.025) 0,
+      rgba(82, 57, 31, 0.025) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    linear-gradient(
+      135deg,
+      #ead9b3 0%,
+      #dbc49a 48%,
+      #cbb181 100%
+    );
+
+  background-size:
+    31px 29px,
+    37px 41px,
+    auto,
+    auto;
+
+  border-color: #8a7048;
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.42),
+    inset 0 0 35px rgba(101, 68, 31, 0.14);
+}
+
+/* 正面顶部区域 */
+.main-content .character-card-front
+  .character-card-header {
+  border-bottom-color: rgba(91, 65, 34, 0.42);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* 正面顶部英文小标题 */
+.main-content .character-card-front
+  .character-card-category {
+  color: #715b3b;
+}
+
+/* 正面标题 */
+.main-content .character-card-front
+  .character-card-heading {
+  color: #30271d;
+}
+
+/* 正面编号 */
+.main-content .character-card-front
+  .character-card-number {
+  color: #6b5739;
+}
+
+/* 正面头像外框 */
+.main-content .character-card-front
+  .character-card-photo {
+  background:
+    linear-gradient(
+      135deg,
+      #f0e2c3,
+      #d1b783
+    );
+
+  border-color: #8e744d;
+
+  box-shadow:
+    0 5px 14px rgba(76, 51, 25, 0.25),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.32);
+}
+
+/* 正面头像边框 */
+.main-content .character-card-front
+  .character-card-photo img {
+  border-color: rgba(78, 56, 32, 0.45);
+}
+
+/* 正面资料行 */
+.main-content .character-card-front
+  .character-card-row {
+  border-bottom-color: rgba(91, 65, 34, 0.28);
+}
+
+/* 正面字段名称 */
+.main-content .character-card-front
+  .character-card-row dt {
+  color: #6b5537;
+}
+
+/* 正面字段内容 */
+.main-content .character-card-front
+  .character-card-row dd {
+  color: #302820;
+}
+
+/* 正面链接 */
+.main-content .character-card-front a {
+  color: #664718;
+  text-decoration-color: rgba(102, 71, 24, 0.5);
+}
+
+.main-content .character-card-front a:hover {
+  color: #39250b;
+  text-decoration-color: #39250b;
+}
+
+/* 正面剧透揭开后的颜色 */
+.main-content .character-card-front
+  .spoiler.is-revealed {
+  color: #302820 !important;
+  background-color: rgba(255, 248, 224, 0.5);
+  border-color: #72572f;
+}
