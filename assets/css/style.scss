@@ -1288,3 +1288,438 @@ body {
     margin: 0 auto;
   }
 }
+/* =========================
+   黑红角色卡
+   ========================= */
+
+.main-content .character-card-scene {
+  width: 100%;
+  max-width: 760px;
+  margin: 2rem auto 2.5rem;
+
+  perspective: 1600px;
+}
+
+/* 卡片主体 */
+.main-content .character-card {
+  width: 100%;
+}
+
+/* 卡片正反面的共同容器 */
+.main-content .character-card-inner {
+  display: grid;
+
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+}
+
+/* 翻转状态 */
+.main-content
+  .character-card.is-flipped
+  .character-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* 正反面共同样式 */
+.main-content .character-card-face {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  grid-area: 1 / 1;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  color: #f1e6e8;
+
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(153, 31, 49, 0.18),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #120c0f 0%,
+      #1b1014 52%,
+      #0c0a0d 100%
+    );
+
+  border: 1px solid #762333;
+  border-radius: 10px;
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.5),
+    inset 0 0 35px rgba(137, 28, 45, 0.1);
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 卡片背面 */
+.main-content .character-card-back {
+  transform: rotateY(180deg);
+}
+
+/* 书签形按钮 */
+.main-content .character-card-bookmark {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  z-index: 10;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 48px;
+  height: 72px;
+  padding: 11px 4px 0;
+
+  color: #fff1f2;
+  font-family:
+    "Noto Serif SC",
+    "Source Han Serif SC",
+    "Songti SC",
+    serif;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  writing-mode: vertical-rl;
+
+  background:
+    linear-gradient(
+      180deg,
+      #c7354b 0%,
+      #8f1e32 75%,
+      #641522 100%
+    );
+
+  border: 1px solid #e45a6b;
+  border-top: 0;
+
+  /*
+   * 底部中间凹进去，形成书签形状。
+   */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    50% 78%,
+    0 100%
+  );
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.45),
+    inset 0 0 8px rgba(255, 255, 255, 0.12);
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.main-content .character-card-bookmark:hover {
+  filter: brightness(1.2);
+  transform: translateY(3px);
+}
+
+.main-content .character-card-bookmark:focus-visible {
+  outline: 2px solid #ff8796;
+  outline-offset: 3px;
+}
+
+/* 卡片顶部 */
+.main-content .character-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  min-height: 78px;
+  padding: 15px 22px 13px 92px;
+
+  border-bottom: 1px solid rgba(190, 48, 70, 0.42);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+/* 小标题 */
+.main-content .character-card-category {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #d35a6b;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+/* 卡片标题 */
+.main-content .character-card-heading {
+  color: #fff4f5;
+  font-family:
+    "Noto Serif SC",
+    "Source Han Serif SC",
+    "Songti SC",
+    serif;
+  font-size: 1.32rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+/* 编号 */
+.main-content .character-card-number {
+  flex-shrink: 0;
+
+  color: #a84a5a;
+  font-family:
+    "Courier New",
+    monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* 正面头像和资料 */
+.main-content .character-card-body {
+  display: grid;
+  grid-template-columns: minmax(145px, 190px) minmax(0, 1fr);
+  gap: 24px;
+
+  padding: 22px;
+}
+
+/* 头像外框 */
+.main-content .character-card-photo {
+  align-self: start;
+
+  padding: 7px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2a1118,
+      #120b0e
+    );
+
+  border: 1px solid #873044;
+
+  box-shadow:
+    0 5px 14px rgba(0, 0, 0, 0.42),
+    inset 0 0 0 2px rgba(199, 53, 75, 0.12);
+}
+
+/* 头像 */
+.main-content .character-card-photo img {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+
+  border: 1px solid #5f2634;
+}
+
+/* 正面资料列表 */
+.main-content .character-card-list {
+  margin: 0;
+}
+
+/* 每行资料 */
+.main-content .character-card-row {
+  display: grid;
+  grid-template-columns: 6em minmax(0, 1fr);
+  gap: 14px;
+
+  padding: 11px 4px;
+
+  border-bottom: 1px solid rgba(168, 45, 65, 0.32);
+}
+
+.main-content .character-card-row:first-child {
+  padding-top: 2px;
+}
+
+.main-content .character-card-row:last-child {
+  border-bottom: 0;
+}
+
+/* 字段名称 */
+.main-content .character-card-row dt {
+  margin: 0;
+
+  color: #d15a6c;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* 字段内容 */
+.main-content .character-card-row dd {
+  min-width: 0;
+  margin: 0;
+
+  color: #f0e4e7;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* 卡片里的链接 */
+.main-content .character-card a {
+  color: #ff8796;
+  font-weight: 600;
+  text-decoration-color: rgba(255, 135, 150, 0.55);
+}
+
+.main-content .character-card a:hover {
+  color: #ffc0c8;
+  text-decoration-color: #ffc0c8;
+}
+
+/* =========================
+   卡片背面内容
+   ========================= */
+
+.main-content .character-card-back-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+
+  padding: 24px 24px 28px;
+}
+
+/* 背面的信息区块 */
+.main-content .character-card-back-section {
+  padding: 15px;
+
+  background-color: rgba(80, 18, 31, 0.2);
+  border: 1px solid rgba(173, 49, 70, 0.38);
+  border-radius: 7px;
+}
+
+.main-content .character-card-back-section h3 {
+  margin: 0 0 9px;
+
+  color: #e15d70;
+  font-size: 0.92rem;
+  letter-spacing: 0.06em;
+}
+
+.main-content .character-card-back-section p {
+  margin: 0;
+
+  color: #eadde0;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.main-content .character-card-back-section ul {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.main-content .character-card-back-section li {
+  margin: 0.35rem 0;
+
+  color: #eadde0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+/* =========================
+   角色卡中的剧透
+   ========================= */
+
+.main-content .character-card .spoiler.is-revealed {
+  color: #f1e6e8 !important;
+  background-color: #421722;
+  border-color: #b63b51;
+}
+
+.main-content
+  .character-card
+  .spoiler.is-revealed
+  a {
+  color: #ff9aa7 !important;
+}
+
+/* =========================
+   手机端
+   ========================= */
+
+@media screen and (max-width: 600px) {
+  .main-content .character-card-scene {
+    margin: 1.4rem 0 2rem;
+  }
+
+  .main-content .character-card-header {
+    min-height: 70px;
+    padding: 13px 14px 11px 78px;
+  }
+
+  .main-content .character-card-heading {
+    font-size: 1.12rem;
+  }
+
+  .main-content .character-card-bookmark {
+    left: 17px;
+
+    width: 43px;
+    height: 66px;
+
+    font-size: 0.68rem;
+  }
+
+  .main-content .character-card-body {
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 15px;
+
+    padding: 15px;
+  }
+
+  .main-content .character-card-row {
+    display: block;
+    padding: 8px 2px;
+  }
+
+  .main-content .character-card-row dt {
+    margin-bottom: 2px;
+    font-size: 0.73rem;
+  }
+
+  .main-content .character-card-row dd {
+    font-size: 0.86rem;
+  }
+
+  .main-content .character-card-back-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+
+    padding: 18px 15px 22px;
+  }
+}
+
+/* 很窄的手机：头像和资料上下排列 */
+@media screen and (max-width: 400px) {
+  .main-content .character-card-body {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content .character-card-photo {
+    width: min(180px, 70%);
+    margin: 0 auto;
+  }
+}
