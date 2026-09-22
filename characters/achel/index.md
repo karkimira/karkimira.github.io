@@ -145,10 +145,15 @@
           </span>
 
         </header>
-
+       <div class="character-card-back-layout">
+       <div class="character-card-back-photo">
+    <img
+      src="achel2.jpg"
+      alt="另一种图片"
+    >
+  </div>
         <div class="character-card-back-content">
-
-          <div class="character-card-back-section">
+        <div class="character-card-back-section">
             <h3>姓名</h3>
             <p>
               茵提尔-涅恩斯
