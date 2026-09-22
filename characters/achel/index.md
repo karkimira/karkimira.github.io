@@ -30,7 +30,7 @@
           aria-expanded="false"
           aria-label="查看里侧"
         >
-          <span aria-hidden="true">档案</span>
+          <span aria-hidden="true">另一种可能性</span>
         </button>
 
         <header class="character-card-header">
@@ -125,7 +125,7 @@
           aria-expanded="false"
           aria-label="返回正史"
         >
-          <span aria-hidden="true">返回</span>
+          <span aria-hidden="true">返回正史</span>
         </button>
 
         <header class="character-card-header">
@@ -189,7 +189,10 @@
           </div>
         </div>
     </div>
-
+      </section>
+    </div>
+  </div>
+</div>
 
 
 
