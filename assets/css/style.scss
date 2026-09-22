@@ -1723,84 +1723,7 @@ body {
     margin: 0 auto;
   }
 }
-/* =========================
-   角色卡背面图片
-   ========================= */
 
-.main-content .character-card-back-layout {
-  display: grid;
-  grid-template-columns: minmax(140px, 190px) minmax(0, 1fr);
-  align-items: start;
-  gap: 22px;
-
-  padding: 24px;
-}
-
-.main-content .character-card-back-photo {
-  padding: 7px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #2a1118,
-      #120b0e
-    );
-
-  border: 1px solid #873044;
-
-  box-shadow:
-    0 5px 14px rgba(0, 0, 0, 0.42),
-    inset 0 0 0 2px rgba(199, 53, 75, 0.12);
-}
-
-.main-content .character-card-back-photo img {
-  display: block;
-
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  object-position: center;
-
-  border: 1px solid #5f2634;
-}
-
-/*
- * 覆盖之前的 padding，
- * 因为现在 padding 由 back-layout 负责。
- */
-.main-content .character-card-back-layout
-  .character-card-back-content {
-  padding: 0;
-}
-
-/* 手机端背面改为上下布局 */
-@media screen and (max-width: 600px) {
-  .main-content .character-card-back-layout {
-    grid-template-columns: 110px minmax(0, 1fr);
-    gap: 15px;
-
-    padding: 18px 15px 22px;
-  }
-
-  .main-content .character-card-back-layout
-    .character-card-back-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-}
-
-/* 很窄的手机 */
-@media screen and (max-width: 400px) {
-  .main-content .character-card-back-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .main-content .character-card-back-photo {
-    width: min(180px, 70%);
-    margin: 0 auto;
-  }
-}
 /* =========================
    角色卡正面：旧书卷风格
    背面继续保持黑红风格
@@ -1933,4 +1856,127 @@ body {
   color: #302820 !important;
   background-color: rgba(255, 248, 224, 0.5);
   border-color: #72572f;
+}
+
+/* =========================
+   角色卡背面
+   与正面保持相同布局，
+   只改变为黑红配色
+   ========================= */
+
+/* 背面整体黑红背景 */
+.main-content .character-card-back {
+  color: #f1e6e8;
+
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(153, 31, 49, 0.18),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #120c0f 0%,
+      #1b1014 52%,
+      #0c0a0d 100%
+    );
+
+  border-color: #762333;
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.5),
+    inset 0 0 35px rgba(137, 28, 45, 0.1);
+}
+
+/* 背面标题区域 */
+.main-content .character-card-back
+  .character-card-header {
+  border-bottom-color: rgba(190, 48, 70, 0.42);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+/* 背面英文分类 */
+.main-content .character-card-back
+  .character-card-category {
+  color: #d35a6b;
+}
+
+/* 背面标题 */
+.main-content .character-card-back
+  .character-card-heading {
+  color: #fff4f5;
+}
+
+/* 背面编号 */
+.main-content .character-card-back
+  .character-card-number {
+  color: #a84a5a;
+}
+
+/* 背面图片框 */
+.main-content .character-card-back
+  .character-card-photo {
+  background:
+    linear-gradient(
+      135deg,
+      #2a1118,
+      #120b0e
+    );
+
+  border-color: #873044;
+
+  box-shadow:
+    0 5px 14px rgba(0, 0, 0, 0.42),
+    inset 0 0 0 2px rgba(199, 53, 75, 0.12);
+}
+
+/* 背面图片 */
+.main-content .character-card-back
+  .character-card-photo img {
+  border-color: #5f2634;
+}
+
+/* 背面资料分隔线 */
+.main-content .character-card-back
+  .character-card-row {
+  border-bottom-color: rgba(168, 45, 65, 0.32);
+}
+
+/* 背面字段名称 */
+.main-content .character-card-back
+  .character-card-row dt {
+  color: #d15a6c;
+}
+
+/* 背面字段内容 */
+.main-content .character-card-back
+  .character-card-row dd {
+  color: #f0e4e7;
+}
+
+/* 背面链接 */
+.main-content .character-card-back a {
+  color: #ff8796;
+  text-decoration-color: rgba(255, 135, 150, 0.55);
+}
+
+.main-content .character-card-back a:hover {
+  color: #ffc0c8;
+  text-decoration-color: #ffc0c8;
+}
+
+/* 背面的书签按钮 */
+.main-content .character-card-back
+  .character-card-bookmark {
+  color: #fff1f2;
+
+  background:
+    linear-gradient(
+      180deg,
+      #c7354b 0%,
+      #8f1e32 75%,
+      #641522 100%
+    );
+
+  border-color: #e45a6b;
 }
