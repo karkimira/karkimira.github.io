@@ -1723,3 +1723,81 @@ body {
     margin: 0 auto;
   }
 }
+/* =========================
+   角色卡背面图片
+   ========================= */
+
+.main-content .character-card-back-layout {
+  display: grid;
+  grid-template-columns: minmax(140px, 190px) minmax(0, 1fr);
+  align-items: start;
+  gap: 22px;
+
+  padding: 24px;
+}
+
+.main-content .character-card-back-photo {
+  padding: 7px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2a1118,
+      #120b0e
+    );
+
+  border: 1px solid #873044;
+
+  box-shadow:
+    0 5px 14px rgba(0, 0, 0, 0.42),
+    inset 0 0 0 2px rgba(199, 53, 75, 0.12);
+}
+
+.main-content .character-card-back-photo img {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+
+  border: 1px solid #5f2634;
+}
+
+/*
+ * 覆盖之前的 padding，
+ * 因为现在 padding 由 back-layout 负责。
+ */
+.main-content .character-card-back-layout
+  .character-card-back-content {
+  padding: 0;
+}
+
+/* 手机端背面改为上下布局 */
+@media screen and (max-width: 600px) {
+  .main-content .character-card-back-layout {
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 15px;
+
+    padding: 18px 15px 22px;
+  }
+
+  .main-content .character-card-back-layout
+    .character-card-back-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+/* 很窄的手机 */
+@media screen and (max-width: 400px) {
+  .main-content .character-card-back-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content .character-card-back-photo {
+    width: min(180px, 70%);
+    margin: 0 auto;
+  }
+}
