@@ -162,21 +162,21 @@
         <div class="character-card-row">
           <dt>姓名</dt>
           <dd>
-            茵提尔-涅恩斯
+            <span class="spoiler">茵提尔-涅恩斯</span>
           </dd>
         </div>
 
         <div class="character-card-row">
           <dt>别名</dt>
           <dd>
-            灾厄收藏家，阴谋王座
+             <span class="spoiler">灾厄收藏家</span>， <span class="spoiler">阴谋王座</span>
           </dd>
         </div>
 
         <div class="character-card-row">
           <dt>生日</dt>
           <dd>
-            圣座纪1000年风月13日
+             <span class="spoiler">圣座纪1000年风月13日</span>
           </dd>
         </div>
 
@@ -192,7 +192,7 @@
                <div class="character-card-row">
                 <dt>道路位阶</dt>
                 <dd>
-                王座 调令者
+                <span class="spoiler">王座</span> <span class="spoiler">调令者</span>
                 </dd>
               </div>
 
