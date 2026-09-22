@@ -79,6 +79,13 @@
                 <dd>圣座纪1000年土月13日</dd>
               </div>
 
+             <div class="character-card-row">
+                <dt>种族</dt>
+                <dd>
+                <span class="spoiler">黑日子嗣</span>
+                </dd>
+              </div>
+
               <div class="character-card-row">
                 <dt>所属组织</dt>
                 <dd>
@@ -179,6 +186,13 @@
              <span class="spoiler">圣座纪1000年风月13日</span>
           </dd>
         </div>
+
+        <div class="character-card-row">
+                <dt>种族</dt>
+                <dd>
+                <span class="spoiler">黑日子嗣</span>
+                </dd>
+              </div>
 
         <div class="character-card-row">
                 <dt>所属组织</dt>
