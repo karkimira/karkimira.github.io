@@ -30,7 +30,7 @@
           aria-expanded="false"
           aria-label="查看里侧"
         >
-          <span aria-hidden="true">另一种可能性</span>
+          <span aria-hidden="true">另一侧</span>
         </button>
 
         <header class="character-card-header">
