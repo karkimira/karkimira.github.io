@@ -8,71 +8,191 @@
 
 ## 基本信息
 
-<div class="character-id-card">
-  <div class="character-id-header">
-    <div>
-      <span class="character-id-category">书库档案</span>
-      <div class="character-id-heading">人物数据</div>
-    </div>
-    <span class="character-id-number">No. 001</span>
-  </div>
-  <div class="character-id-body">
-    <div class="character-id-photo">
-      <img
-        src="achel.jpg"
-        alt="角色头像"
+<div class="character-card-scene">
+
+  <div class="character-card" data-character-card>
+
+    <div class="character-card-inner">
+
+      <!-- =========================
+           卡片正面
+           ========================= -->
+      <section
+        class="character-card-face character-card-front"
+        aria-label="角色基本资料"
+        aria-hidden="false"
       >
+
+        <button
+          type="button"
+          class="character-card-bookmark"
+          data-card-toggle
+          aria-expanded="false"
+          aria-label="查看里侧"
+        >
+          <span aria-hidden="true">档案</span>
+        </button>
+
+        <header class="character-card-header">
+
+          <div>
+            <span class="character-card-category">
+              书库记录
+            </span>
+
+            <div class="character-card-heading">
+              人物档案
+            </div>
+          </div>
+
+          <span class="character-card-number">
+            No. 001
+          </span>
+
+        </header>
+
+        <div class="character-card-body">
+
+          <div class="character-card-photo">
+            <img
+              src="achel.jpg"
+              alt="角色头像"
+            >
+          </div>
+
+          <div class="character-card-information">
+
+            <dl class="character-card-list">
+
+              <div class="character-card-row">
+                <dt>姓名</dt>
+                <dd>亚歇尔-泽里克亚契</dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>别名</dt>
+                <dd>启示者方舟</dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>生日</dt>
+                <dd>圣座纪1000年土月13日</dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>所属组织</dt>
+                <dd>
+                  <a href="../../organizations/team-fantame/">
+                    探险队“时幻”
+                  </a>
+                </dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>道路位阶</dt>
+                <dd>
+                承位 咒术使
+                </dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>资格</dt>
+                <dd>救世主</dd>
+              </div>
+
+            </dl>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           卡片背面
+           ========================= -->
+      <section
+        class="character-card-face character-card-back"
+        aria-label="另一种可能性"
+        aria-hidden="true"
+      >
+
+        <button
+          type="button"
+          class="character-card-bookmark"
+          data-card-toggle
+          aria-expanded="false"
+          aria-label="返回正史"
+        >
+          <span aria-hidden="true">返回</span>
+        </button>
+
+        <header class="character-card-header">
+
+          <div>
+            <span class="character-card-category">
+              异常记录
+            </span>
+
+            <div class="character-card-heading">
+              异常资料
+            </div>
+          </div>
+
+          <span class="character-card-number">
+            No. 001
+          </span>
+
+        </header>
+
+        <div class="character-card-back-content">
+
+          <div class="character-card-back-section">
+            <h3>姓名</h3>
+            <p>
+              茵提尔-涅恩斯
+            </p>
+          </div>
+
+          <div class="character-card-back-section">
+            <h3>生日</h3>
+            <p>
+              圣座纪1000年风月13日
+            </p>
+          </div>
+
+          <div class="character-card-back-section">
+            <h3>所属组织</h3>
+            <p>
+              谋世之匣
+            </p>
+          </div>
+
+          <div class="character-card-back-section">
+            <h3>道路位阶</h3>
+            <p>
+              王座 调令者
+            </p>
+          </div>
+
+          <div class="character-card-back-section">
+            <h3>资格</h3>
+            <p>
+              “救世主”
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
     </div>
-    <div class="character-id-information">
-      <dl class="character-id-list">
-        <div class="character-id-row">
-          <dt>姓名</dt>
-        <dd>亚歇尔-泽里克亚契</dd>
-        </div>
-        <div class="character-id-row">
-          <dt>别名</dt>
-          <dd>亚歇尔-<span class="spoiler">涅恩斯</span>、<span class="spoiler">茵提尔-涅恩斯</span>、<span class="spoiler">启示者方舟</span></dd>
-        </div>
-        <div class="character-id-row">
-          <dt>生日</dt>
-         <dd>圣座纪1000年土<span class="spoiler">风</span>月13日</dd>
-       </div>
-        <div class="character-id-row">
-          <dt>资格</dt>
-         <dd>救世主</dd>
-       </div>
-        <div class="character-id-row">
-          <dt>位阶</dt>
-          <dd>承位 <span class="spoiler">王座</span></dd>
-        </div>
-        <div class="character-id-row">
-         <dt>种族</dt>
-         <dd><span class="spoiler">黑日子嗣</span></dd>
-         </div>
-         <div class="character-id-row">
-        <dt>道路</dt>
-        <dd>咒术使<span class="spoiler">调令者</span></dd>
-         </div>
-         <div class="character-id-row">
-          <dt>所属组织</dt>
-          <dd>
-            <a href="../../organizations/team-fantame/">
-              探险队“时幻”
-            </a>
-          </dd>
-        </div>
-        <div class="character-id-row">
-          <dt>出生地</dt>
-          <dd>
-            <a href="../../locations/yokayel/">
-              界间界-尤卡耶尔
-            </a>
-          </dd>
-        </div>
-      </dl>
-    </div>
+
   </div>
+
 </div>
+
 
 ## 人际关系
 - **养姐**：[菲莉卡-泽里克亚契](../../characters/ferica/)
