@@ -8,68 +8,218 @@
 
 ## 基本信息
 
-<div class="character-id-card">
-  <div class="character-id-header">
+<div class="character-card-scene">
+
+  <div class="character-card" data-character-card>
+
+    <div class="character-card-inner">
+
+      <!-- =========================
+           卡片正面
+           ========================= -->
+      <section
+        class="character-card-face character-card-front"
+        aria-label="角色基本资料"
+        aria-hidden="false"
+      >
+
+        <button
+          type="button"
+          class="character-card-bookmark"
+          data-card-toggle
+          aria-expanded="false"
+          aria-label="查看里侧"
+        >
+          <span aria-hidden="true">另一侧</span>
+        </button>
+
+        <header class="character-card-header">
+
+          <div>
+            <span class="character-card-category">
+              书库记录
+            </span>
+
+            <div class="character-card-heading">
+              人物档案
+            </div>
+          </div>
+
+          <span class="character-card-number">
+            No. 002
+          </span>
+
+        </header>
+
+        <div class="character-card-body">
+
+          <div class="character-card-photo">
+            <img
+              src="ferica.jpg"
+              alt="角色头像"
+            >
+          </div>
+
+          <div class="character-card-information">
+
+            <dl class="character-card-list">
+
+              <div class="character-card-row">
+                <dt>姓名</dt>
+                <dd>菲莉卡-泽里克亚契</dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>别名</dt>
+                <dd>幻骑将</dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>生日</dt>
+                <dd>圣座纪1000年土月15日</dd>
+              </div>
+
+             <div class="character-card-row">
+                <dt>种族</dt>
+                <dd>
+                界族
+                </dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>所属组织</dt>
+                <dd>
+                  <a href="../../organizations/team-fantame/">
+                    探险队“时幻”
+                  </a>
+                </dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>道路位阶</dt>
+                <dd>
+                纵位 轮环使
+                </dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>资格</dt>
+                <dd>逆业</dd>
+              </div>
+
+            </dl>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           卡片背面
+           ========================= -->
+      
+<section
+  class="character-card-face character-card-back"
+  aria-label="可能的角色"
+  aria-hidden="true"
+>
+  <button
+    type="button"
+    class="character-card-bookmark"
+    data-card-toggle
+    aria-expanded="false"
+    aria-label="返回正面"
+  >
+    <span aria-hidden="true">正史</span>
+  </button>
+
+  <header class="character-card-header">
+
     <div>
-      <span class="character-id-category">书库档案</span>
-      <div class="character-id-heading">人物数据</div>
+      <span class="character-card-category">
+        错误档案
+      </span>
+
+      <div class="character-card-heading">
+        异常数据
+      </div>
     </div>
-    <span class="character-id-number">No. 002</span>
-  </div>
-  <div class="character-id-body">
-    <div class="character-id-photo">
+
+    <span class="character-card-number">
+      No. 002
+    </span>
+
+  </header>
+
+  <div class="character-card-body">
+
+    <div class="character-card-photo">
       <img
         src="ferica.jpg"
-        alt="角色头像"
+        alt="里图片"
       >
     </div>
-    <div class="character-id-information">
-      <dl class="character-id-list">
-        <div class="character-id-row">
+
+    <div class="character-card-information">
+
+      <dl class="character-card-list">
+
+        <div class="character-card-row">
           <dt>姓名</dt>
-        <dd>菲莉卡-泽里克亚契</dd>
-        </div>
-        <div class="character-id-row">
-          <dt>别名</dt>
-          <dd><span class="spoiler">幻骑将</span></dd>
-        </div>
-        <div class="character-id-row">
-          <dt>生日</dt>
-         <dd>圣座纪1000年土月15日</dd>
-       </div>
-        <div class="character-id-row">
-          <dt>资格</dt>
-         <dd><span class="spoiler">逆业</span></dd>
-       </div>
-        <div class="character-id-row">
-          <dt>位阶</dt>
-          <dd>纵位</dd>
-        </div>
-        <div class="character-id-row">
-         <dt>种族</dt>
-         <dd>界族</dd>
-         </div>
-         <div class="character-id-row">
-        <dt>道路</dt>
-        <dd>轮环使</dd>
-         </div>
-         <div class="character-id-row">
-          <dt>所属组织</dt>
           <dd>
-            <a href="../../organizations/team-fantame/">
-              探险队“时幻”
-            </a>
+            菲莉卡-泽里克亚契
           </dd>
         </div>
-        <div class="character-id-row">
-          <dt>出生地</dt>
+
+        <div class="character-card-row">
+          <dt>别名</dt>
           <dd>
-            <a href="../../locations/yokayel/">
-              界间界-尤卡耶尔
-            </a>
+             救世的骑将
+          </dd>
+        </div>
+
+        <div class="character-card-row">
+          <dt>生日</dt>
+          <dd>
+             <span class="spoiler">圣座纪1000年土月13日</span>
+          </dd>
+        </div>
+
+        <div class="character-card-row">
+                <dt>种族</dt>
+                <dd>
+                界族
+                </dd>
+              </div>
+
+        <div class="character-card-row">
+                <dt>所属组织</dt>
+                <dd>
+                  <a href="../../organizations/team/">
+                    无
+                  </a>
+                </dd>
+              </div>
+
+               <div class="character-card-row">
+                <dt>道路位阶</dt>
+                <dd>
+                主座 骑将
+                </dd>
+              </div>
+
+        <div class="character-card-row">
+          <dt>资格</dt>
+          <dd>
+            救世主
           </dd>
         </div>
       </dl>
+    </div>
+  </div>
+</section>   
     </div>
   </div>
 </div>
