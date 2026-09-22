@@ -112,84 +112,100 @@
       <!-- =========================
            卡片背面
            ========================= -->
-      <section
-        class="character-card-face character-card-back"
-        aria-label="另一种可能性"
-        aria-hidden="true"
-      >
+      
+<section
+  class="character-card-face character-card-back"
+  aria-label="可能的角色"
+  aria-hidden="true"
+>
+  <button
+    type="button"
+    class="character-card-bookmark"
+    data-card-toggle
+    aria-expanded="false"
+    aria-label="返回正面"
+  >
+    <span aria-hidden="true">正史</span>
+  </button>
 
-        <button
-          type="button"
-          class="character-card-bookmark"
-          data-card-toggle
-          aria-expanded="false"
-          aria-label="返回正史"
-        >
-          <span aria-hidden="true">返回正史</span>
-        </button>
+  <header class="character-card-header">
 
-        <header class="character-card-header">
+    <div>
+      <span class="character-card-category">
+        错误档案
+      </span>
 
-          <div>
-            <span class="character-card-category">
-              异常记录
-            </span>
-
-            <div class="character-card-heading">
-              异常资料
-            </div>
-          </div>
-
-          <span class="character-card-number">
-            No. 001
-          </span>
-
-        </header>
-       <div class="character-card-back-layout">
-       <div class="character-card-back-photo">
-    <img
-      src="achel2.jpg"
-      alt="另一种图片"
-    >
-  </div>
-        <div class="character-card-back-content">
-        <div class="character-card-back-section">
-            <h3>姓名</h3>
-            <p>
-              茵提尔-涅恩斯
-            </p>
-          </div>
-
-          <div class="character-card-back-section">
-            <h3>生日</h3>
-            <p>
-              圣座纪1000年风月13日
-            </p>
-          </div>
-
-          <div class="character-card-back-section">
-            <h3>所属组织</h3>
-            <p>
-              谋世之匣
-            </p>
-          </div>
-
-          <div class="character-card-back-section">
-            <h3>道路位阶</h3>
-            <p>
-              王座 调令者
-            </p>
-          </div>
-
-          <div class="character-card-back-section">
-            <h3>资格</h3>
-            <p>
-              “救世主”
-            </p>
-          </div>
-        </div>
+      <div class="character-card-heading">
+        异常数据
+      </div>
     </div>
-      </section>
+
+    <span class="character-card-number">
+      No. 001
+    </span>
+
+  </header>
+
+  <div class="character-card-body">
+
+    <div class="character-card-photo">
+      <img
+        src="achel2.jpg"
+        alt="里图片"
+      >
+    </div>
+
+    <div class="character-card-information">
+
+      <dl class="character-card-list">
+
+        <div class="character-card-row">
+          <dt>姓名</dt>
+          <dd>
+            茵提尔-涅恩斯
+          </dd>
+        </div>
+
+        <div class="character-card-row">
+          <dt>别名</dt>
+          <dd>
+            灾厄收藏家，阴谋王座
+          </dd>
+        </div>
+
+        <div class="character-card-row">
+          <dt>生日</dt>
+          <dd>
+            圣座纪1000年风月13日
+          </dd>
+        </div>
+
+        <div class="character-card-row">
+                <dt>所属组织</dt>
+                <dd>
+                  <a href="../../organizations/team/">
+                    谋世之匣
+                  </a>
+                </dd>
+              </div>
+
+               <div class="character-card-row">
+                <dt>道路位阶</dt>
+                <dd>
+                王座 调令者
+                </dd>
+              </div>
+
+        <div class="character-card-row">
+          <dt>资格</dt>
+          <dd>
+            “救世主？”
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>   
     </div>
   </div>
 </div>
