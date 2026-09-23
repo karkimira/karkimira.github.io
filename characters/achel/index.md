@@ -76,7 +76,12 @@
 
               <div class="character-card-row">
                 <dt>生日</dt>
-                <dd>圣座纪1000年土月13日</dd>
+                <dd>圣座纪1000年土月<span class="spoiler">风月</span>13日</dd>
+              </div>
+
+              <div class="character-card-row">
+                <dt>阵营倾向</dt>
+                <dd>停5变5</dd>
               </div>
 
              <div class="character-card-row">
@@ -186,6 +191,11 @@
              <span class="spoiler">圣座纪1000年风月13日</span>
           </dd>
         </div>
+
+        <div class="character-card-row">
+                <dt>阵营倾向</dt>
+                <dd>变10</dd>
+              </div>
 
         <div class="character-card-row">
                 <dt>种族</dt>
