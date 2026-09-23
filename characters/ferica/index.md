@@ -176,14 +176,14 @@
         <div class="character-card-row">
           <dt>别名</dt>
           <dd>
-             救世的骑将
+             逆骑将
           </dd>
         </div>
 
         <div class="character-card-row">
           <dt>生日</dt>
           <dd>
-             <span class="spoiler">圣座纪1000年土月13日</span>
+             圣座纪1000年土月15日
           </dd>
         </div>
 
@@ -197,16 +197,14 @@
         <div class="character-card-row">
                 <dt>所属组织</dt>
                 <dd>
-                  <a href="../../organizations/team/">
                     无
-                  </a>
                 </dd>
               </div>
 
                <div class="character-card-row">
                 <dt>道路位阶</dt>
                 <dd>
-                主座 骑将
+                主位 骑将
                 </dd>
               </div>
 
