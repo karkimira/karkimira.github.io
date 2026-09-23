@@ -30,7 +30,7 @@
           aria-expanded="false"
           aria-label="查看里侧"
         >
-          <span aria-hidden="true">另一侧</span>
+          <span aria-hidden="true">异典</span>
         </button>
 
         <header class="character-card-header">
@@ -139,11 +139,11 @@
 
     <div>
       <span class="character-card-category">
-        错误档案
+        书库档案
       </span>
 
       <div class="character-card-heading">
-        异常数据
+        另一种可能性
       </div>
     </div>
 
@@ -157,7 +157,7 @@
 
     <div class="character-card-photo">
       <img
-        src="ferica.jpg"
+        src="ferica2.jpg"
         alt="里图片"
       >
     </div>
