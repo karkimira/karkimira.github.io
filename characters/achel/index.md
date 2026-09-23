@@ -30,7 +30,7 @@
           aria-expanded="false"
           aria-label="查看里侧"
         >
-          <span aria-hidden="true">另一侧</span>
+          <span aria-hidden="true">异典</span>
         </button>
 
         <header class="character-card-header">
@@ -139,11 +139,11 @@
 
     <div>
       <span class="character-card-category">
-        错误档案
+        书库档案
       </span>
 
       <div class="character-card-heading">
-        异常数据
+        另一种可能性
       </div>
     </div>
 
@@ -169,7 +169,7 @@
         <div class="character-card-row">
           <dt>姓名</dt>
           <dd>
-            <span class="spoiler">茵提尔-涅恩斯</span>
+            茵提尔<span class="spoiler">-涅恩斯</span>
           </dd>
         </div>
 
@@ -230,8 +230,10 @@
 - **养姐**：[菲莉卡-泽里克亚契](../../characters/ferica/)
 - **母亲**：<span class="spoiler">西涅尔-涅恩斯</span>
 - **祖先**：<span class="spoiler">艾克莉娅-“残刃”-涅恩斯</span>
+
 ## 外貌
 有着红色眼睛的棕发少女。
+
 ## 性格
 随路线变化。
 
