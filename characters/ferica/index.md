@@ -79,6 +79,11 @@
                 <dd>圣座纪1000年土月15日</dd>
               </div>
 
+              <div class="character-card-row">
+                <dt>阵营倾向</dt>
+                <dd>停7变3</dd>
+              </div>
+
              <div class="character-card-row">
                 <dt>种族</dt>
                 <dd>
@@ -186,6 +191,11 @@
              圣座纪1000年土月15日
           </dd>
         </div>
+
+        <div class="character-card-row">
+                <dt>阵营倾向</dt>
+                <dd>停6变4</dd>
+              </div>
 
         <div class="character-card-row">
                 <dt>种族</dt>
